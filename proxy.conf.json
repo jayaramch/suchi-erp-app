@@ -1,0 +1,7 @@
+{
+  "**": {
+    "target": "http://localhost:1235/api-suchi-emr",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}
