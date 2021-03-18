@@ -1,6 +1,6 @@
 {
   "**": {
-    "target": "http://localhost:1235/api-suchi-emr",
+    "target": "http://localhost:1235/api-suchi-erp",
     "secure": false,
     "logLevel": "debug"
   }
