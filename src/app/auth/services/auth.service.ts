@@ -1,4 +1,4 @@
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import {Inject, Injectable} from '@angular/core';
 import {Observable, throwError} from 'rxjs';
 import {catchError, map} from 'rxjs/operators';
@@ -8,15 +8,6 @@ import {environment} from 'src/environments/environment';
 import {LoginModel} from '../models/login.model';
 import {SESSION_STORAGE, StorageService} from 'ngx-webstorage-service';
 
-const OAUTH_CLIENT = 'client';
-const OAUTH_SECRET = 'clientpassword';
-
-const HTTP_OPTIONS = {
-  headers: new HttpHeaders({
-    'Content-Type': 'application/x-www-form-urlencoded',
-    Authorization: 'Basic ' + btoa(OAUTH_CLIENT + ':' + OAUTH_SECRET),
-  }),
-};
 
 @Injectable({
   providedIn: 'root',

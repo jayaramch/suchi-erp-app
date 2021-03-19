@@ -6,6 +6,7 @@ import {HRMSComponent} from './hrms.component';
 import {HrDashboardComponent} from './hr-dashboard/hr-dashboard.component';
 import {ChartsModule} from '../charts/charts.module';
 import {CountToModule} from 'angular-count-to';
+import {InterceptorsModule} from '../../shared/interceptors/interceptors.module';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import {CountToModule} from 'angular-count-to';
     FormsModule,
     ChartsModule,
     CountToModule,
+    InterceptorsModule
   ],
 
 })

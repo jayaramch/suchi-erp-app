@@ -16,6 +16,7 @@ import {FooterComponent} from './footer/footer.component';
 import {HeaderComponent} from './header/header.component';
 import {LeftmenuComponent} from './leftmenu/leftmenu.component';
 import {RouterModule} from '@angular/router';
+import {InterceptorsModule} from '../../shared/interceptors/interceptors.module';
 
 
 const COMPONENTS = [
@@ -43,6 +44,7 @@ const COMPONENTS = [
     ProgressbarModule.forRoot(),
     CarouselModule.forRoot(),
     ToastrModule.forRoot({}),
+    InterceptorsModule
   ],
   exports: COMPONENTS
 })

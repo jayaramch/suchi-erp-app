@@ -9,6 +9,7 @@ import {CarouselModule} from 'ngx-bootstrap/carousel';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ToastrModule} from 'ngx-toastr';
+import {InterceptorsModule} from "./shared/interceptors/interceptors.module";
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {ToastrModule} from 'ngx-toastr';
     ToastrModule.forRoot({
       positionClass: 'toast-top-center',
     }),
+    InterceptorsModule,
     AppRoutingModule
   ],
   providers: [],

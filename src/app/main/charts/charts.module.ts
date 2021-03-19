@@ -18,7 +18,7 @@ import {SparklinesComponent} from './sparklines/sparklines.component';
 import {NgApexchartsModule} from 'ng-apexcharts';
 import {CountToModule} from 'angular-count-to';
 import {ElementsModule} from '../elements/elements.module';
-
+import {InterceptorsModule} from '../../shared/interceptors/interceptors.module';
 const COMPONENTS = [
   ChartsComponent,
   AreaChartComponent,
@@ -46,6 +46,7 @@ const COMPONENTS = [
     ElementsModule,
     NgApexchartsModule,
     CountToModule,
+    InterceptorsModule
   ],
   exports: COMPONENTS,
 })

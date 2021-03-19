@@ -3,6 +3,8 @@ import {CommonModule} from '@angular/common';
 import {MainRoutingModule} from './main-routing.module';
 import {MainComponent} from './main.component';
 import {ElementsModule} from './elements/elements.module';
+import {InterceptorsModule} from '../shared/interceptors/interceptors.module';
+import {GuardsModule} from '../shared/guards/guards.module';
 
 
 const COMPONENTS = [
@@ -15,7 +17,9 @@ const COMPONENTS = [
   imports: [
     CommonModule,
     MainRoutingModule,
-    ElementsModule
+    ElementsModule,
+    GuardsModule,
+    InterceptorsModule
   ],
 })
 export class MainModule {
